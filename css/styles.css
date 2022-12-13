@@ -78,7 +78,7 @@ h1 {
   font-weight: 800;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: url("/img/dan-cristian-padure-9I2W5-7Kp4k-unsplash.jpg");
+  background-image: url("img/dan-cristian-padure-9I2W5-7Kp4k-unsplash.jpg");
   background-size: cover;
   color: transparent;
   font-family: "serif";
@@ -108,7 +108,7 @@ h1 {
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 10px;
   border: 2px solid red;
-  background-image: url("/img/wave-warp.gif");
+  background-image: url("img/wave-warp.gif");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
