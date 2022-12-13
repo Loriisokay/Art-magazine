@@ -1,0 +1,264 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+body {
+  height: 100vh, 1900px;
+  width: 100%;
+  min-width: 50%;
+}
+
+.header {
+  font-family: "Zilla Slab";
+  font-size: 1.5vw;
+  color: #000;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 2%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  list-style: none;
+}
+
+.social_links {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.nav_links li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav_links li a:hover {
+  color: #7209b7;
+  text-decoration: none;
+}
+
+.nav_links li a:active {
+  color: #d90429;
+  text-decoration: none;
+}
+
+#hero {
+  height: 100vh;
+}
+
+.hero_block {
+  display: grid;
+  grid-row: auto;
+  grid-column: auto;
+}
+
+h1 {
+  font-size: 13vw;
+  font-weight: 800;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url("/img/dan-cristian-padure-9I2W5-7Kp4k-unsplash.jpg");
+  background-size: cover;
+  color: transparent;
+  font-family: "serif";
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #000;
+  margin: 11% auto 2% auto;
+}
+
+.heading_part {
+  color: #000;
+  -webkit-text-stroke: 0px transparent;
+}
+
+.site_descr {
+  font-family: "Arimo";
+  color: #212529;
+  font-size: 2vw;
+  font-style: italic;
+  margin: 0 7%;
+}
+
+.current_news {
+  width: 95vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20px auto 20px auto 20px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 10px;
+  border: 2px solid red;
+  background-image: url("/img/wave-warp.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h2 {
+  margin: 2% auto 8% auto;
+  font-family: "Zilla Slab";
+  font-size: 4vw;
+  color: #FFF;
+  grid-column: 1/6;
+  grid-row: 1/2;
+  font-weight: 800;
+}
+
+.news_card1 {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  background-color: #000;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.card_link {
+  text-decoration: none;
+}
+
+.punks_news {
+  font-family: "Rubik 80s Fade";
+  font-size: 3.5vw;
+  color: #FFF;
+}
+
+.author, .readmore {
+  font-family: "Zilla Slab";
+  font-size: 2vw;
+  color: #FFF;
+}
+
+.card_descr {
+  font-family: "Zilla Slab";
+  font-size: 1.5vw;
+  color: #FFF;
+}
+
+.card_heading, .author, .card_descr {
+  padding: 0.5rem;
+}
+
+.news_card2 {
+  background-color: #212529;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  grid-row: 2/3;
+  grid-column: 4/5;
+  margin: 0 auto;
+  z-index: 2;
+  text-align: center;
+}
+
+.boston {
+  font-family: "Martian Mono";
+  font-size: 2.5vw;
+  color: #7209b7;
+}
+
+.news_card3 {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  z-index: 3;
+  background-color: #18171a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+}
+
+.constructivism {
+  font-family: "Martian Mono";
+  font-size: 2.5vw;
+  color: #FFF;
+}
+
+.readmore {
+  grid-row: 4/5;
+  grid-column: 3/5;
+  z-index: 4;
+  padding: 5%;
+}
+
+.readmore a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.readmore a:hover {
+  color: #7209b7;
+}
+
+.readmore a:active {
+  color: #d90429;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: min(100%, 600px);
+  }
+  .logo_link {
+    margin: 10px auto;
+  }
+  .site_descr {
+    font-size: 3.5vw;
+  }
+  .nav_links, .social_links {
+    display: none;
+  }
+  #hero {
+    margin: 0 auto;
+    height: 70vh;
+  }
+  .current_news {
+    display: flex;
+    flex-direction: column;
+  }
+  .news_card1 {
+    text-align: center;
+  }
+  h2, .card_heading {
+    font-size: 7vw;
+  }
+  .author, .readmore {
+    font-size: 5vw;
+  }
+  .card_descr {
+    font-size: 4vw;
+  }
+  .readmore {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
